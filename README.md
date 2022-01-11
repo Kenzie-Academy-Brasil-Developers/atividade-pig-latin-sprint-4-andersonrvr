@@ -22,3 +22,4 @@ Como há muitas variações das regras do Pig Latin, por favor, adote estas regr
 Copie o conteúdo [deste repl.it](https://repl.it/@kenzieacademy/Pig-Latin) para um arquivo javascript local, crie uma página HTML em branco que inclua o script e depois siga as instruções para implementar os Passos 1 a 10.
 
 Incluímos algumas funções pré-incorporadas para ajudá-lo a verificar seu progresso à medida que avança no exercício. Por exemplo, depois de implementar o Passo 1, carregue sua página novamente e verifique o console. Se você ver um erro como "english to pig latin failed…", talvez seja necessário consertar algo no código. Se não ver nenhum erro como esse, então está no caminho certo! ood-gay uck-lay!
+
