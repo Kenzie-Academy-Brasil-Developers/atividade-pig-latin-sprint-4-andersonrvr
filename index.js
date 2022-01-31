@@ -6,6 +6,16 @@
         "eat" becomes "eatyay"
         "omelet" becomes "omeletyay" 
 */
+const enPhrase = document.getElementById('EnglishToPigLatin')
+const enButton = document.getElementById('enButton')
+const pigResult = document.getElementById('pigResult')
+
+const pigPhrase = document.getElementById('PigLatinToEnglish')
+const pigButton = document.getElementById('pigButton')
+const enResult = document.getElementById('enResult')
+
+
+
 function encodeVowelWord(word) {
   return word + 'yay'; // replace this!
 }
@@ -71,6 +81,7 @@ function encodeWord(word) {
 /*
     STEP # 4: Encode a full sentence or paragraph from english to pig latin.
 */
+
 function encodeText(text) {
   let arrSplited = text.split(' ')
   for(let i = 0; i < arrSplited.length; i++){
@@ -82,7 +93,14 @@ function encodeText(text) {
 /*
     STEP # 5: Create a web form where users can input any message in plain english
     and get it encoded into pig latin.
+
 */
+enButton.addEventListener ('click' , function () {
+  const text = enPhrase.value  
+  pigResult.innerText = encodeText(text)
+  
+})
+
 
 /*  
     STEP # 6: Decode pig latin words into words that begin with a vowel sound. 
@@ -166,7 +184,16 @@ function decodeText(text) {
     STEP # 10: Create a web form where users can input any message in pig latin and get it 
     decoded into plain english.
 */
+// const pigPhrase = document.getElementById('PigLatinToEnglish')
+// const pigButton = document.getElementById('pigButton')
+// const enResult = document.getElementById('enResult')
 
+
+pigButton.addEventListener ('click' , function () {
+  const text1 = pigPhrase.value  
+  enResult.innerText = decodeText(text1)
+  
+})
 /*
     BONUS: Go back to encodeText and decodeText and modify it so it can gracefully handle punctuation 
     such as '.', ',', '?'
